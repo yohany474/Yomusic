@@ -16,7 +16,7 @@ require 'model/genero.php';
   <link rel="shortcut icon" href="img/logoo.png" type="image/x-icon" />
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://kit.fontawesome.com/0015840e45.js" crossorigin="anonymous"></script>
-  <title>Yo music</title>
+  <title>Yomusic</title>
 </head>
 
 <body>
@@ -124,7 +124,7 @@ require 'model/genero.php';
     </section>
 
     <section id="list-music">
-      <h3>Elige las canciones para crear tu propia lista de reproducción.</h3>
+      <h3>Elige las canciones que mas te gusten para crear tu playlist</h3>
 
       <?php
       if (!empty($data)) {
@@ -195,9 +195,9 @@ require 'model/genero.php';
       }
       ?>
 
-      <!-- <div class="item" id="changeThem">
+      <div class="item" id="changeThem">
         <i id="icono" class="fas fa-lightbulb"></i>
-      </div> -->
+      </div>
     </div>
   </aside>
   <!-- Contenedor principal -->

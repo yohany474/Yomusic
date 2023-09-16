@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+/*BannerPagina*/
+.banner{
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 16rem;
+    display: flex;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5em;
+}
+.titulo h1,.titulo> h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    filter: drop-shadow(4px 4px 6px rgb(0, 0, 0));
+}
+.titulo h1{
+    margin-bottom: .2em  ;
+    font-size: 2.2em;
+    text-align: center;
+}
+.titulo h2{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+
+
+.banner>.titulo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0, 0.2);
+  
+}
+.volver{
+    position: fixed;
+    left: .5em;
+    top: 1em;
+    text-decoration: none;
+    font-size: 19px;
+    font-family: sans-serif;   
+     color: tomato;
+     font-weight: 700;
+}
+#main{
+    background-color: #22313f;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    gap: 1em;
+    overflow: auto;
+    padding: 1em;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 500px) {
+    #main{
+        justify-content: none;
+    }
+}

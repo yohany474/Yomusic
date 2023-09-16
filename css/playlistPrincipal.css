@@ -1,0 +1,104 @@
+:root {
+    --color-principal: #ffbf00;
+    --color-titulo: #eff3f5;
+    --color-contenido: #c8cdd0;
+    --color-claro: #a0a7ac;
+    --color-borde: #2a3b47;
+    --color-contenedor: #212e36;
+    --color-fondo-cuerpo: #192229;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Banner de la playlist */
+
+#banner{
+    height: 15em;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: .5;
+    border-bottom: .8em solid var(--color-principal);
+}
+
+#banner >section{
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.1);
+    flex-direction: column;
+    gap: .2em;
+}
+
+#banner >a{
+    color: var(--color-principal);
+    font-size: 1em;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    top: .5em;
+    gap: .2em;
+    left: .5em;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#banner >:nth-child(1){
+    top: 2em;
+}
+#banner >a:hover{
+    background-color: var(--color-borde);
+}
+
+#banner >section > h3{
+    color: var(--color-titulo);
+    font-size: 2.5em;
+}
+
+
+#banner >section > h5{
+    color: var(--color-principal);
+    font-size: 1.5em;
+}
+
+/* Ventana agregar mas canciones */
+
+#addMusic{
+    width: 30rem;
+    align-self: center;
+    height: 80%;
+    box-sizing: border-box;
+    padding: .2em;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-borde);
+}
+#addMusic [type='submit']{
+    align-self: center;
+}
+/* Contenedor ventana */
+#ventanaCrearPLaylist{
+    justify-content: center !important;
+    align-items: center !important;
+}  
+
+
+/* Media query */
+@media screen  and(min-width: 500px) {
+        #addMusic{
+            width: 85% !important;
+        }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <script src="https://kit.fontawesome.com/0015840e45.js" crossorigin="anonymous"></script>
+
+    <title>Registro</title>
+  </head>
+  <body>
+
+
+    <section id="ventanaTerminos">
+      <section>
+        <h3>Términos y condiciones</h3>
+        <p>Al registrarse, usted acepta los siguientes términos y condiciones:</p>
+        <ul>
+          <li>Está prohibido subir contenido indebido o ilegal.</li>
+          <li>El contenido que viole nuestras políticas será bloqueado y puede resultar en la suspensión de su cuenta.</li>
+          <li>Nos reservamos el derecho de tomar medidas contra cualquier comportamiento inapropiado.</li>
+        </ul>
+        <label for="aceptar">Acepto los términos y condiciones:</label>
+        <input type="checkbox" name="acept" id="aceptar">
+        <button id="confirmar">Confirmar</button>
+      </section>
+    </section>
+  
+    <section class="contenedor-form"style="height: 32em;">
+      
+    <h2>Crear cuenta</h2> 
+      <form id="validarRegistro" >
+        <label for="Nombre">Nombre </label>
+        <input type="text" name="nombre" id="Nombre" />
+        <label for="Apellido">Apellido</label>
+        <input type="text" name="apellido" id="Apellido" />
+        <label for="Email">Correo electronico</label>
+        <input type="email" name="email" id="Email" />
+        <label for="contraseña">Contraseña</label>
+        <div class="ver">
+          <i class="fas fa-eye"></i>
+        </div>
+        <input type="password" name="password" id="password" />
+        <button type="submit" value="" name="ingresar" id="enviarRegistro">Registrarse</button>
+      </form>
+      <a href="login.html">Iniciar sesión</a>
+    </section>
+    <script src="../js/validarRegistro.js"></script>
+  </body>
+</html>

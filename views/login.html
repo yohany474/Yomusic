@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <script src="https://kit.fontawesome.com/0015840e45.js" crossorigin="anonymous"></script>
+
+    <title>Login</title>
+  </head>
+  <body>
+
+    <section class="contenedor-form">
+      <a href="../index.php"><img src="../img/logoo.png" alt="" class="logo" /></a>
+      <form id="validar">
+
+        <label for="Dni">Correo electronico</label>
+        <input type="email" name="email" id="Dni" />
+        <label for="Contraseña">Contraseña</label>
+        <div class="ver">
+          <i class="fas fa-eye"></i>
+        </div>
+        <input type="password" name="contraseña" id="Contraseña" />
+        <button type="submit" value="" name="ingresar" id="enviar">Ingresar</button>
+      </form>
+      <a href="registro.html">No tienes cuenta? crear cuenta</a>
+    </section>
+    <script src="../js/validarLogin.js"></script>
+  </body>
+</html>

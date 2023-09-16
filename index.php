@@ -16,7 +16,7 @@ require 'model/genero.php';
   <link rel="shortcut icon" href="img/logoo.png" type="image/x-icon" />
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://kit.fontawesome.com/0015840e45.js" crossorigin="anonymous"></script>
-  <title>Home</title>
+  <title>Yo music</title>
 </head>
 
 <body>
@@ -35,7 +35,7 @@ require 'model/genero.php';
 
     <form action="" method="post" enctype="multipart/form-data" id="form-agregar" class="form">
       <div class="close" id="cerrarCrearCancion">Cerrar</div>
-      <h3>Agregar canción</h3>
+      <h3>Subir canción</h3>
       <img src="" alt="" id="imagenPreview" width="50px" height="50px" style="opacity: 0;">
 
       <label for="Nombre">Título de la canción</label>
@@ -53,7 +53,7 @@ require 'model/genero.php';
         }
         ?>
       </select>
-      <label for="Musica">Selecciona el archivo de la canción (formato MP3)</label>
+      <label for="Musica">Selecciona el audio de la canción (formato MP3)</label>
       <input required type="file" name="cancion" id="Musica" accept=".mp3">
       <label for="Imagen">Selecciona la imagen relacionada (formato de imagen)</label>
       <input required type="file" name="imagen" id="Imagen" accept="image/*">
